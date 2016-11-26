@@ -13,6 +13,11 @@ Due to recent events of people using OptiminerZcash despite not being
 willing to pay the developer for his work depriving any earnings there are
 no more public releases of the software.
 
+Note that re-distribution of versions downloaded from here is disallowed
+according to its licence.
+
+See the full discussion at https://forum.z.cash/t/about-linux-dev-fees/9600/18?u=optiminer
+
 Thank you for your understanding.
 
 Supports:
