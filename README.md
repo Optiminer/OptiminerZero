@@ -29,10 +29,14 @@ net rate, i.e., with fee deducted. What you see is what You get!
 
 ## Usage:
 Run from the archive root directory:
+```
 $ ./optiminer-zcash -s eu1-zcash.flypool.org:3333 -u t1Yszagk1jBjdyPfs2GxXx1GWcfn6fdTuFJ.example -p password
+```
 
-For a list of all options run with '-h':
+For a list of all options run with `-h`:
+```
 $ ./optiminer-zcash -h
+```
 
 There are also 'mine.sh' and 'start.bat' scripts for running it under
 Windows and Unix. Just edit the pool and user settings before running!
@@ -42,9 +46,10 @@ Since version 1.0.0, the miner supports ZStratum protocol over TLS to
 encrypt the connection to the mining pool. Currently, this is only supported
 with flypool.
 
-Use "zstratum+tls://" as prefix to the pool address, e.g.,
+Use `zstratum+tls://` as prefix to the pool address, e.g.,
+```
 $ ./optiminer-zcash -s zstratum+tls://eu1-zcash.flypool.org:3443 -u t1Yszagk1jBjdyPfs2GxXx1GWcfn6fdTuFJ.example -p password
-
+```
 
 ## Troubleshooting
 
@@ -55,9 +60,9 @@ might crash or have very poor performance. The miner tries to auto-detect
 the best intensity for your card but you can experiment with different
 values.
 
-E.g., adding '-i 2' to command line sets intensity to 2 for all cards. If
-you have multiple card you can specify one '-i' for each card, e.g., if you
-have four cards '-i 3 -i 4 -i 4 -i 3' (same order as -d). An intensity value
+E.g., adding `-i 2` to command line sets intensity to 2 for all cards. If
+you have multiple card you can specify one `-i` for each card, e.g., if you
+have four cards `-i 3 -i 4 -i 4 -i 3` (same order as `-d`). An intensity value
 of 0 means auto-detect.
 
 ### `GLIBCXX_3.4.20' not found on Ubuntu 14.04
