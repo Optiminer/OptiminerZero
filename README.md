@@ -2,9 +2,9 @@
 
 GPU miner for Zcash.
 
-## v1.0.0
+## v1.0.1
 [Download Linux
-64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.0.0.tar.gz)
+64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.0.1.tar.gz)
 <!--
 [Download Windows 64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-0.6.0.zip)
 -->
@@ -36,6 +36,15 @@ $ ./optiminer-zcash -h
 
 There are also 'mine.sh' and 'start.bat' scripts for running it under
 Windows and Unix. Just edit the pool and user settings before running!
+
+### Secure connection
+Since version 1.0.0, the miner supports ZStratum protocol over TLS to
+encrypt the connection to the mining pool. Currently, this is only supported
+with flypool.
+
+Use "zstratum+tls://" as prefix to the pool address, e.g.,
+$ ./optiminer-zcash -s zstratum+tls://eu1-zcash.flypool.org:3443 -u t1Yszagk1jBjdyPfs2GxXx1GWcfn6fdTuFJ.example -p password
+
 
 ## Troubleshooting
 
@@ -69,6 +78,7 @@ symlink /usr/lib/libOpenCL.so.1 that points to the OpenCL library on your
 system.
 
 ## Changelog
+- [1.0.1] Change default directory for openssl certificates.
 - [1.0.0] Add --nodevfee option.
 - [1.0.0] Minor optimizations.
 - [0.9.1] Add support for zstratum+tls protocol.
