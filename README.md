@@ -2,32 +2,23 @@
 
 GPU miner for Zcash.
 
-<!---
-## v0.6.0 (Beta)
-[Download Linux 64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-0.6.0.tar.gz)
-
+## v1.0.0
+[Download Linux
+64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.0.0.tar.gz)
+<!--
 [Download Windows 64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-0.6.0.zip)
 -->
-## No Public Releases
-Due to recent events of people using OptiminerZcash despite not being
-willing to pay the developer for his work depriving any earnings there are
-no more public releases of the software.
 
-Note that re-distribution of versions downloaded from here is disallowed
-according to its licence.
-
-See the full discussion at https://forum.z.cash/t/about-linux-dev-fees/9600/18?u=optiminer
-
-Thank you for your understanding.
+### Features
 
 Supports:
-- Linux and Windows 64bit only.
+- Linux 64bit only.
 - AMD GCN cards only.
 
 Expected speed (stock card):
 - R9 Nano: 255 S/s
-- R9 290: 190 S/s
-- RX 480: 185 S/s
+- R9 290: 200 S/s
+- RX 480: 195 S/s
 
 Windows support may be added in a future version.
 
@@ -78,6 +69,12 @@ symlink /usr/lib/libOpenCL.so.1 that points to the OpenCL library on your
 system.
 
 ## Changelog
+- [1.0.0] Add --nodevfee option.
+- [1.0.0] Minor optimizations.
+- [0.9.1] Add support for zstratum+tls protocol.
+- [0.9.1] Multi-threading issues fixes.
+- [0.9.0] Switched to new async I/O communication.
+- [0.9.0] Switched to different logging library. Now supports log rotation.
 - [0.6.0] 20-30% speed improvements.
 - [0.5.0] Add intensity for increased hash rates.
 - [0.4.0] Async solution validation and reporting.
