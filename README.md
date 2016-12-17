@@ -2,30 +2,27 @@
 
 GPU miner for Zcash.
 
-## v1.0.1
+## v1.1.0
 [Download Linux
-64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.0.1.tar.gz)
-<!--
-[Download Windows 64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-0.6.0.zip)
--->
+64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.1.0.tar.gz)
+[Download Windows 
+64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.1.0.zip)
 
 ### Features
 
 Supports:
-- Linux 64bit only.
+- Windows and Linux 64bit only.
 - AMD GCN cards only.
 
 Expected speed (stock card):
-- R9 Nano: 260 S/s
-- R9 290: 200 S/s
+- R9 Nano: 280 S/s
+- R9 290: 225 S/s
 - RX 480: 195 S/s
 
-Windows support may be added in a future version.
-
-No NVIDIA support planned at the moment.
+NVIDIA support planned in the future.
 
 The miner contains a fee for supporting the dev. All shown hash rates are
-net rate, i.e., with fee deducted. What you see is what You get!
+net rate, i.e., with fee deducted. What you see is what YOU get!
 
 ## Usage:
 Run from the archive root directory:
@@ -82,7 +79,13 @@ There is a problem with your OpenCL installation. Make sure that there is a
 symlink /usr/lib/libOpenCL.so.1 that points to the OpenCL library on your
 system.
 
+### [error] OpenCL error: cl::Context::Context() (CL_DEVICE_NOT_FOUND)
+Either you have specified a wrong device or there is a problem with your
+OpenCL setup. Restarting X might help to re-initialize the graphic driver.
+
 ## Changelog
+- [1.1.0] Improved hash rate.
+- [1.1.0] Fix potential crashes in stratum code.
 - [1.0.1] Change default directory for openssl certificates.
 - [1.0.0] Add --nodevfee option.
 - [1.0.0] Minor optimizations.
