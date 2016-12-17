@@ -5,6 +5,7 @@ GPU miner for Zcash.
 ## v1.1.0
 [Download Linux
 64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.1.0.tar.gz)
+
 [Download Windows 
 64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.1.0.zip)
 
