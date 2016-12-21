@@ -42,7 +42,7 @@ Windows and Unix. Just edit the pool and user settings before running!
 ### Secure connection
 Since version 1.0.0, the miner supports ZStratum protocol over TLS to
 encrypt the connection to the mining pool. Currently, this is only supported
-with flypool.
+with some pools, e.g., flypool and supernova.
 
 Use `zstratum+tls://` as prefix to the pool address, e.g.,
 ```
