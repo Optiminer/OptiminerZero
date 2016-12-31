@@ -2,12 +2,12 @@
 
 GPU miner for Zcash.
 
-## v1.1.0
+## v1.2.0
 [Download Linux
-64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.1.0.tar.gz)
+64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.2.0.tar.gz)
 
 [Download Windows 
-64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.1.0.zip)
+64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.2.0.zip)
 
 ### Features
 
@@ -16,9 +16,9 @@ Supports:
 - AMD GCN cards only.
 
 Expected speed (stock card):
-- R9 Nano: 280 S/s
-- R9 290: 225 S/s
-- RX 480: 195 S/s
+- R9 Nano: 313 S/s
+- R9 290X: 262 S/s
+- RX 480:  198 S/s
 
 NVIDIA support planned in the future.
 
@@ -85,6 +85,8 @@ Either you have specified a wrong device or there is a problem with your
 OpenCL setup. Restarting X might help to re-initialize the graphic driver.
 
 ## Changelog
+- [1.2.0] Add custom optimization for GCN1.1 and GCN1.2 cards (requires fglrx).
+- [1.2.0] Fix memory leek and potential race condition.
 - [1.1.0] Improved hash rate.
 - [1.1.0] Fix potential crashes in stratum code.
 - [1.0.1] Change default directory for openssl certificates.
