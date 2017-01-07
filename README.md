@@ -11,9 +11,9 @@ GPU miner for Zcash.
 
 **Important: Version 1.3.0 needs GPU_FORCE_64BIT_PTR=1**
 
-**4rd and 3rd GCN generation cards (Nano, RX4*0, ...) currently run
+**4rd and 3rd GCN generation cards (Nano, RX4\*0) currently run
 slower on windows than linux. Therefore I recommend to use linux with fglrx
-(Nano) or amdgpu-pro (RX4*0) for those cards!**
+(Nano) or amdgpu-pro (RX4\*0) for those cards!**
 
 ### Features
 
