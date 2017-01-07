@@ -87,8 +87,13 @@ symlink /usr/lib/libOpenCL.so.1 that points to the OpenCL library on your
 system.
 
 ### [error] OpenCL error: cl::Context::Context() (CL_DEVICE_NOT_FOUND)
-Either you have specified a wrong device or there is a problem with your
-OpenCL setup. Restarting X might help to re-initialize the graphic driver.
+Either you have specified a wrong device / platform combination or there is
+a problem with your OpenCL setup.
+
+By default platform id 0 is used. You can specify a different platform by
+adding '-c N' to the command line where N is a small number (try 0,1,2).
+
+Restarting X might help to re-initialize the graphic driver under Linux.
 
 ### Internal error: Link failed
 This can happen if you use an unsupported version of the graphic driver.
