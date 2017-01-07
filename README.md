@@ -90,6 +90,11 @@ system.
 Either you have specified a wrong device or there is a problem with your
 OpenCL setup. Restarting X might help to re-initialize the graphic driver.
 
+### Internal error: Link failed
+This can happen if you use an unsupported version of the graphic driver.
+Try updating to the newest driver or use --force-generic-version to get a
+slower implementation that also runs on older drivers.
+
 ## Changelog
 - [1.3.0] Further device specific optimizations bringing up to 30% increase in hash rate!
 - [1.3.0] Fix crahes with optimized kernel under Windows.
