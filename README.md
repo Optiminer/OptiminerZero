@@ -2,18 +2,23 @@
 
 GPU miner for Zcash.
 
-## v1.3.0
+## v1.3.1
 [Download Linux
-64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.3.0.tar.gz)
+64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.3.1.tar.gz)
 
 [Download Windows 
-64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.3.0.zip)
+64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.3.1.zip)
 
-**Important: Version 1.3.0 needs GPU_FORCE_64BIT_PTR=1**
+**Important: Versions from 1.3.0 need GPU_FORCE_64BIT_PTR=1**
 
-**4rd and 3rd GCN generation cards (Nano, RX4\*0) currently run
-slower on windows than linux. Therefore I recommend to use linux with fglrx
-(Nano) or amdgpu-pro (RX4\*0) for those cards!**
+### Recommended Drivers
+
+#### Linux
+- fgrlx 15.30.3 for all GCN 1st-3rd gen cards
+- amdgpu-pro 16.40.5 for GCN 4th gen cards (RX4\*0)
+
+#### Windows
+- Full speed can only be achieved under Catalyst 15.12 drivers!
 
 ### Features
 
@@ -101,6 +106,10 @@ Try updating to the newest driver or use --force-generic-version to get a
 slower implementation that also runs on older drivers.
 
 ## Changelog
+- [1.3.1] Automatically select AMD platform when not specified.
+- [1.3.1] Print error when 32bit addressing is used.
+- [1.3.1] Try to select best kernel for used driver.
+- [1.3.1] Add option to list devices (--list-devices).
 - [1.3.0] Further device specific optimizations bringing up to 30% increase in hash rate!
 - [1.3.0] Fix crahes with optimized kernel under Windows.
 - [1.2.0] Add custom optimization for GCN1.1 and GCN1.2 cards (requires fglrx).
