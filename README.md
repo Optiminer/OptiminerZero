@@ -104,7 +104,7 @@ Restarting X might help to re-initialize the graphic driver under Linux.
 
 ### Internal error: Link failed
 This can happen if you use an unsupported version of the graphic driver.
-Try updating to the newest driver or use --force-generic-version to get a
+Try updating to the newest driver or use `--force-generic-kernel` to get a
 slower implementation that also runs on older drivers.
 
 ## Changelog
