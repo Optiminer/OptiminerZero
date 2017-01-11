@@ -18,7 +18,9 @@ GPU miner for Zcash.
 - amdgpu-pro 16.40.5 for GCN 4th gen cards (RX4\*0)
 
 #### Windows
-- Full speed can only be achieved under Catalyst 15.12 drivers!
+- Full speed can only be achieved under Catalyst 15.12 drivers! See
+  [below](#installing-catalyst-1512-on-windows) for how to install the older
+  driver version.
 - RX4\*0 cards are not supported by Catalyst 15.12, **I strongly recommend
   to use linux for mining on them!**
 
@@ -110,7 +112,7 @@ slower implementation that also runs on older drivers.
 ### Installing catalyst 15.12 on Windows
 - Download and run the [AMD driver
   cleanup](http://support.amd.com/en-us/kb-articles/Pages/AMD-Clean-Uninstall-Utility.aspx)
-- Download and install [Download Windows 10 64-bit (Desktop)] from
+- Download and install "Download Windows 10 64-bit (Desktop)" from
   [here](http://www.guru3d.com/files-details/amd-radeon-software-crimson-15-12-driver-download.html).
   You need to scroll down to find the download links.
 - Reboot. 
