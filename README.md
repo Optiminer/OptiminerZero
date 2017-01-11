@@ -107,6 +107,14 @@ This can happen if you use an unsupported version of the graphic driver.
 Try updating to the newest driver or use `--force-generic-kernel` to get a
 slower implementation that also runs on older drivers.
 
+### Installing catalyst 15.12 on Windows
+- Download and run the [AMD driver
+  cleanup](http://support.amd.com/en-us/kb-articles/Pages/AMD-Clean-Uninstall-Utility.aspx)
+- Download and install [Download Windows 10 64-bit (Desktop)] from
+  [here](http://www.guru3d.com/files-details/amd-radeon-software-crimson-15-12-driver-download.html).
+  You need to scroll down to find the download links.
+- Reboot. 
+
 ## Changelog
 - [1.3.2] Support older versions of fgrlx again.
 - [1.3.2] Fix abort when failing to list devices of platform.
