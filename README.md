@@ -2,12 +2,12 @@
 
 GPU miner for Zcash.
 
-## v1.3.1
+## v1.3.2
 [Download Linux
-64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.3.1.tar.gz)
+64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.3.2.tar.gz)
 
 [Download Windows 
-64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.3.1.zip)
+64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.3.2.zip)
 
 **Important: Versions from 1.3.0 need GPU_FORCE_64BIT_PTR=1**
 
@@ -19,6 +19,8 @@ GPU miner for Zcash.
 
 #### Windows
 - Full speed can only be achieved under Catalyst 15.12 drivers!
+- RX4\*0 cards are not supported by Catalyst 15.12, **I strongly recommend
+  to use linux for mining on them!**
 
 ### Features
 
@@ -106,6 +108,10 @@ Try updating to the newest driver or use --force-generic-version to get a
 slower implementation that also runs on older drivers.
 
 ## Changelog
+- [1.3.2] Support older versions of fgrlx again.
+- [1.3.2] Fix abort when failing to list devices of platform.
+- [1.3.2] Fix no reconnect after 'No such host' errors.
+- [1.3.2] Add --benchmark options.
 - [1.3.1] Automatically select AMD platform when not specified.
 - [1.3.1] Print error when 32bit addressing is used.
 - [1.3.1] Try to select best kernel for used driver.
