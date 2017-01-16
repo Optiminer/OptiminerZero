@@ -31,8 +31,8 @@ Supports:
 - AMD GCN cards only.
 
 Expected speed (stock card):
-- R9 Nano: 395 S/s
-- R9 290X: 290 S/s
+- R9 Nano: 400 S/s
+- R9 290X: 295 S/s
 - RX 480:  265 S/s
 
 NVIDIA support planned in the future.
