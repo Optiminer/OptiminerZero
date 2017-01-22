@@ -2,12 +2,12 @@
 
 GPU miner for Zcash.
 
-## v1.4.0
+## v1.5.0
 [Download Linux
-64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.4.0.tar.gz)
+64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.5.0.tar.gz)
 
 [Download Windows 
-64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.4.0.zip)
+64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.5.0.zip)
 
 **Important: Versions from 1.3.0 need GPU_FORCE_64BIT_PTR=1**
 
@@ -31,9 +31,9 @@ Supports:
 - AMD GCN cards only.
 
 Expected speed (stock card):
-- R9 Nano: 400 S/s
-- R9 290X: 295 S/s
-- RX 480:  265 S/s
+- R9 Nano: 410 S/s
+- R9 290X: 300 S/s
+- RX 480:  270 S/s
 
 NVIDIA support planned in the future.
 
@@ -118,6 +118,10 @@ slower implementation that also runs on older drivers.
 - Reboot. 
 
 ## Changelog
+- [1.5.0] Support for more pools.
+- [1.5.0] Allow again extranonces up to 28 bytes (fixed mining problems with
+  nicehash).
+- [1.5.0] 1-2% increase in hash speed for device specific kernels.
 - [1.4.0] Experimental asm support for GCN 1 devices. Enable with
   '--experimental-kernel'
 - [1.4.0] 1-2% increase in hash speed.
