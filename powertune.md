@@ -35,7 +35,7 @@ The MSI afterburner allows control of various aspects of the GPUs for all AMD ca
 ## Custom BIOS
 
 The golden way for optimal performance are custom BIOS. This allows you to also change clock and voltage when running
-the miner under Linux. You can use windows tools to download, change and upload modified card BIOS. As this is written to
-the card's flash the settings will be preserved even when running under Windows.
+the miner under Linux. You can use Windows tools to download, change and upload modified card BIOS. As this is written to
+the card's flash the settings will be preserved between reboots and even when running under Linux.
 
 TODO add links to tools
