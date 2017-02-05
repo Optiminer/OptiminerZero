@@ -20,8 +20,14 @@ Add at least following information to the bug report:
 * Which version of the miner are you using (shown by `optiminer-zcash --version`).
 * Which graphic driver are you using?
 * What GPUs are you using. Post the output of `optiminer-zcash --list-devices`.
-* How often is this problem happending? Everytime? Sporadically? Related to some other events?
+* How often is this problem happening? Everytime? Sporadically? Related to some other events?
 * What is the expected behavior and what is the actual behavior.
+* Try different settings:
+  * Does changing the intensity make any difference (`-i`).
+  * If you have multiple GPUs just run on one (`-d`). Also try to remove
+    GPUs from the system.
+  * Try a different mining pool.
+* Enable logging (`--log-file`) and attach log file when reporting the bug.
 
 # 3. Open an issue.
 
