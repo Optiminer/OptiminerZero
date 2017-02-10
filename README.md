@@ -2,12 +2,12 @@
 
 GPU miner for Zcash.
 
-## v1.6.1
+## v1.6.2
 [Download Linux
-64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.6.1.tar.gz)
+64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.6.2.tar.gz)
 
 [Download Windows 
-64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.6.1.zip)
+64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.6.2.zip)
 
 **Important: Versions from 1.3.0 need GPU_FORCE_64BIT_PTR=1**
 
@@ -118,6 +118,7 @@ slower implementation that also runs on older drivers.
 - Reboot. 
 
 ## Changelog
+- [1.6.2] Implement second pci mode (--pci-mode 1).
 - [1.6.1] Print warning when running on non-optimal driver/platform.
 - [1.6.1] Fix: Don't try to run on non-AMD GPUs.
 - [1.6.0] Asm support for GCN 1 devices.
