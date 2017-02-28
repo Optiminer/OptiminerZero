@@ -11,6 +11,7 @@ GPU miner for Zero.
 
 **Important: Runs only on graphic cards with at least 8GB of RAM!**
 
+<!--
 ### Recommended Drivers
 
 #### Linux
@@ -23,6 +24,7 @@ GPU miner for Zero.
   driver version.
 - RX4\*0 cards are not supported by Catalyst 15.12, **I strongly recommend
   to use linux for mining on them!**
+-->
 
 ### Features
 
