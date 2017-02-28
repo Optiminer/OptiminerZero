@@ -2,14 +2,14 @@
 
 GPU miner for Zcash.
 
-## v1.6.2
+## v1.0.0
 [Download Linux
-64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.6.2.tar.gz)
+64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zcash-1.0.0.tar.gz)
 
 [Download Windows 
-64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.6.2.zip)
+64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zcash-1.0.0.zip)
 
-**Important: Versions from 1.3.0 need GPU_FORCE_64BIT_PTR=1**
+**Important: Runs only on graphic cards with at least 8GB of RAM!**
 
 ### Recommended Drivers
 
@@ -31,9 +31,7 @@ Supports:
 - AMD GCN cards only.
 
 Expected speed (stock card):
-- R9 Nano: 450 S/s (with powertune +50)
-- R9 290X: 311 S/s
-- RX 480:  290 S/s
+- RX 480:  9 S/s
 
 NVIDIA support planned in the future.
 
@@ -43,17 +41,18 @@ are net rate, i.e., with fee deducted. What you see is what YOU get!
 ## Usage:
 Run from the archive root directory:
 ```
-$ ./optiminer-zcash -s eu1-zcash.flypool.org:3333 -u t1Yszagk1jBjdyPfs2GxXx1GWcfn6fdTuFJ.example -p password
+$ ./optiminer-zero -s zero.suprnova.cc:6568 -u moobar.worker -p x
 ```
 
 For a list of all options run with `-h`:
 ```
-$ ./optiminer-zcash -h
+$ ./optiminer-zero -h
 ```
 
 There are also 'mine.sh' and 'start.bat' scripts for running it under
 Windows and Unix. Just edit the pool and user settings before running!
 
+<!--
 ### Secure connection
 Since version 1.0.0, the miner supports ZStratum protocol over TLS to
 encrypt the connection to the mining pool. Currently, this is only supported
@@ -63,20 +62,9 @@ Use `zstratum+tls://` as prefix to the pool address, e.g.,
 ```
 $ ./optiminer-zcash -s zstratum+tls://eu1-zcash.flypool.org:3443 -u t1Yszagk1jBjdyPfs2GxXx1GWcfn6fdTuFJ.example -p password
 ```
+-->
 
 ## Troubleshooting
-
-### Intensity
-Starting with version 0.5.0, there is an intensity option (-i). Higher
-intensity generally means faster hashing. But if it is too high, the miner
-might crash or have very poor performance. The miner tries to auto-detect
-the best intensity for your card but you can experiment with different
-values.
-
-E.g., adding `-i 2` to command line sets intensity to 2 for all cards. If
-you have multiple card you can specify one `-i` for each card, e.g., if you
-have four cards `-i 3 -i 4 -i 4 -i 3` (same order as `-d`). An intensity value
-of 0 means auto-detect.
 
 ### `GLIBCXX_3.4.20' not found on Ubuntu 14.04
 Install the required libstc++:
@@ -118,59 +106,4 @@ slower implementation that also runs on older drivers.
 - Reboot. 
 
 ## Changelog
-- [1.6.2] Implement second pci mode (--pci-mode 1).
-- [1.6.1] Print warning when running on non-optimal driver/platform.
-- [1.6.1] Fix: Don't try to run on non-AMD GPUs.
-- [1.6.0] Asm support for GCN 1 devices.
-- [1.6.0] Reduced CPU utilization.
-- [1.6.0] Fix segfault on reconnect.
-- [1.6.0] Version and Os exported in monitoring.
-- [1.5.0] Support for more pools.
-- [1.5.0] Allow again extranonces up to 28 bytes (fixed mining problems with
-  nicehash).
-- [1.5.0] 1-2% increase in hash speed for device specific kernels.
-- [1.4.0] Experimental asm support for GCN 1 devices. Enable with
-  '--experimental-kernel'
-- [1.4.0] 1-2% increase in hash speed.
-- [1.4.0] Fix race condition that could lead to invalid solutions.
-- [1.3.2] Support older versions of fgrlx again.
-- [1.3.2] Fix abort when failing to list devices of platform.
-- [1.3.2] Fix no reconnect after 'No such host' errors.
-- [1.3.2] Add --benchmark options.
-- [1.3.1] Automatically select AMD platform when not specified.
-- [1.3.1] Print error when 32bit addressing is used.
-- [1.3.1] Try to select best kernel for used driver.
-- [1.3.1] Add option to list devices (--list-devices).
-- [1.3.0] Further device specific optimizations bringing up to 30% increase in hash rate!
-- [1.3.0] Fix crahes with optimized kernel under Windows.
-- [1.2.0] Add custom optimization for GCN1.1 and GCN1.2 cards (requires fglrx).
-- [1.2.0] Fix memory leek and potential race condition.
-- [1.1.0] Improved hash rate.
-- [1.1.0] Fix potential crashes in stratum code.
-- [1.0.1] Change default directory for openssl certificates.
-- [1.0.0] Add --nodevfee option.
-- [1.0.0] Minor optimizations.
-- [0.9.1] Add support for zstratum+tls protocol.
-- [0.9.1] Multi-threading issues fixes.
-- [0.9.0] Switched to new async I/O communication.
-- [0.9.0] Switched to different logging library. Now supports log rotation.
-- [0.6.0] 20-30% speed improvements.
-- [0.5.0] Add intensity for increased hash rates.
-- [0.4.0] Async solution validation and reporting.
-- [0.4.0] Added monitoring port (see -m).
-- [0.3.4] Add GPU watchdog (--watchdog-timeout and --watchdog-cmd).
-- [0.3.4] Fix deadlock in stratum client.
-- [0.3.3] Fix VM_CONTEXT1_PROTECTION_FAULT_ADDR.
-- [0.3.2] Re-enable file logging though --log-file.
-- [0.3.2] Fix bug in extranonce subscription.
-- [0.3.2] Improve stratum client stability.
-- [0.3.2] Reduced dev fee.
-- [0.3.1] Slight improvement on hashing speed on some cards.
-- [0.3.1] Turn off writing to log file.
-- [0.3.1] Enable thread-safe mode for logging library.
-- [0.3.1] Support for extranonce.subscribe for improved compatibility with
-  NiceHash
-- [0.3.0] New way of distributing kernels.
-- [0.2.1] Fix invalid machine instruction error.
-- [0.2.0] Filter invalid solutions on GPU.
-- [0.1.1] Fix startup crash.
+- [1.0.0] Initial release.

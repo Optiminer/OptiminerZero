@@ -3,7 +3,7 @@
 ```
 USAGE: 
 
-   ./optiminer-zcash/optiminer-zcash  [--benchmark <seconds>]
+   ./optiminer-zero/optiminer-zero    [--benchmark <seconds>]
                                       [--list-devices]
                                       [--force-generic-kernel]
                                       [--experimental-kernel] [--nodevfee]
