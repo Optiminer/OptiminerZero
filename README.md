@@ -1,13 +1,13 @@
-# OptiminerZ/Zcash
+# OptiminerZ/Zero
 
-GPU miner for Zcash.
+GPU miner for Zero.
 
 ## v1.0.0
 [Download Linux
-64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zcash-1.0.0.tar.gz)
+64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zero-1.0.0.tar.gz)
 
 [Download Windows 
-64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zcash-1.0.0.zip)
+64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zero-1.0.0.zip)
 
 **Important: Runs only on graphic cards with at least 8GB of RAM!**
 
