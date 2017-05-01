@@ -2,14 +2,19 @@
 
 GPU miner for Zero.
 
-## v1.0.0
-[Download Linux
+## v1.1.0
+[Download Linux 8GB GPU
 64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zero-1.0.0.tar.gz)
 
-[Download Windows 
+
+[Download Windows 8GB GPU
 64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zero-1.0.0.zip)
 
-**Important: Runs only on graphic cards with at least 8GB of RAM!**
+[Download Windows 4GB GPU
+64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zero-1.1.0.zip)
+
+**Important: There are different versions for GPUs with 4GB and 8GB of RAM! If you have a card with 8GB
+download the faster version (1.0.0) that uses all RAM!**
 
 <!--
 ### Recommended Drivers
@@ -33,7 +38,8 @@ Supports:
 - AMD GCN cards only.
 
 Expected speed (stock card):
-- RX 480:  9 S/s
+- Fiji:  6.7 S/s
+- RX 290x: 4.4 S/s
 
 NVIDIA support planned in the future.
 
@@ -43,7 +49,7 @@ are net rate, i.e., with fee deducted. What you see is what YOU get!
 ## Usage:
 Run from the archive root directory:
 ```
-$ ./optiminer-zero -s zero.suprnova.cc:6568 -u moobar.worker -p x
+$ ./optiminer-zero -s zero.suprnova.cc:6568 -u moobar.worker -p x -i 1
 ```
 
 For a list of all options run with `-h`:
