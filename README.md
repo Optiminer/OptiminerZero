@@ -6,6 +6,8 @@ GPU miner for Zero.
 [Download Linux 8GB GPU
 64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zero-1.0.0.tar.gz)
 
+[Download Linux 4GB GPU
+64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zero-1.1.0.tar.gz)
 
 [Download Windows 8GB GPU
 64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zero-1.0.0.zip)
@@ -38,8 +40,9 @@ Supports:
 - AMD GCN cards only.
 
 Expected speed (stock card):
-- Fiji:  6.7 S/s
-- RX 290x: 4.4 S/s
+- Fiji (4GB):  7.5 S/s
+- RX 290x (4GB): 5.5 S/s
+- RX480 (8GB): 8.8 S/s
 
 NVIDIA support planned in the future.
 
@@ -49,7 +52,7 @@ are net rate, i.e., with fee deducted. What you see is what YOU get!
 ## Usage:
 Run from the archive root directory:
 ```
-$ ./optiminer-zero -s zero.suprnova.cc:6568 -u moobar.worker -p x -i 1
+$ ./optiminer-zero -s zero.suprnova.cc:6568 -u moobar.worker -p x
 ```
 
 For a list of all options run with `-h`:
