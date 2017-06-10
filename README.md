@@ -2,9 +2,9 @@
 
 GPU miner for Zero.
 
-## v1.1.0
+## v1.2.0
 [Download Linux 8GB GPU
-64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zero-1.0.0.tar.gz)
+64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zero-1.2.0.tar.gz)
 
 [Download Linux 4GB GPU
 64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zero-1.1.0.tar.gz)
@@ -15,8 +15,8 @@ GPU miner for Zero.
 [Download Windows 4GB GPU
 64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zero-1.1.0.zip)
 
-**Important: There are different versions for GPUs with 4GB and 8GB of RAM! If you have a card with 8GB
-download the faster version (1.0.0) that uses all RAM!**
+**Important: There are different versions for GPUs with 4GB and 8GB of RAM! If you have a card with
+only 4GB download the other version (1.1.0). 4GB is for AMD only!**
 
 <!--
 ### Recommended Drivers
@@ -37,14 +37,13 @@ download the faster version (1.0.0) that uses all RAM!**
 
 Supports:
 - Windows and Linux 64bit only.
-- AMD GCN cards only.
+- AMD GCN cards and NVIDIA.
 
 Expected speed (stock card):
 - Fiji (4GB):  7.5 S/s
 - RX 290x (4GB): 5.5 S/s
 - RX480 (8GB): 8.8 S/s
-
-NVIDIA support planned in the future.
+- GTX1080: 8.2 S/s
 
 The miner contains a 2.5% fee for supporting the developer. All shown hash rates 
 are net rate, i.e., with fee deducted. What you see is what YOU get!
@@ -118,3 +117,5 @@ slower implementation that also runs on older drivers.
 
 ## Changelog
 - [1.0.0] Initial release.
+- [1.1.0] Special version for 4GB cards (slower).
+- [1.2.0] Add support for NVIDIA cards.
