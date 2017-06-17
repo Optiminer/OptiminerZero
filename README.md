@@ -10,7 +10,7 @@ GPU miner for Zero.
 64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zero-1.1.0.tar.gz)
 
 [Download Windows 8GB GPU
-64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zero-1.0.0.zip)
+64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zero-1.2.0.zip)
 
 [Download Windows 4GB GPU
 64bit](https://github.com/Optiminer/OptiminerZero/raw/master/optiminer-zero-1.1.0.zip)
@@ -42,7 +42,7 @@ Supports:
 Expected speed (stock card):
 - Fiji (4GB):  7.5 S/s
 - RX 290x (4GB): 5.5 S/s
-- RX480 (8GB): 8.8 S/s
+- RX480 (8GB): 9.1 S/s
 - GTX1080: 8.2 S/s
 
 The miner contains a 2.5% fee for supporting the developer. All shown hash rates 
@@ -60,7 +60,7 @@ $ ./optiminer-zero -h
 ```
 
 There are also 'mine.sh' and 'start.bat' scripts for running it under
-Windows and Unix. Just edit the pool and user settings before running!
+Linux and Windows. Just edit the pool and user settings before running!
 
 <!--
 ### Secure connection
